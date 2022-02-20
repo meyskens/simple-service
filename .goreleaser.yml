@@ -1,0 +1,13 @@
+builds:
+  - env:
+      - CGO_ENABLED=0
+    binary: simple-service
+    main: ./
+    goos:
+      - windows
+      - darwin
+      - linux
+    goarch:
+      - amd64
+      - arm
+      - arm64
